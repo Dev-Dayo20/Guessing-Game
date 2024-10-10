@@ -1,0 +1,107 @@
+body {
+    padding: 40px;
+    height: 100vh;
+    display: grid;
+    /* flex-direction: flex end; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(indigo, rgb(23, 2, 37));
+    color: white;
+    }
+    input{
+        width: 200px;
+        margin-bottom: 20px;
+    }
+
+    .result {
+        color: red;
+    }
+
+    .la{
+        color: orange;
+        font-size:80px ;
+    }
+
+    #circle {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        background-color: blueviolet;
+        z-index: -1;
+        position: relative;
+        top: 0;
+        left: 0;
+        opacity: 14%;
+        animation-name: circle;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+    }
+
+    @keyframes circle {
+        0% {
+            top: 0;
+            left: 0;
+
+        }
+        25% {
+            top: 50px;
+            left: 50px;
+        }
+        25% {
+            top: 100px;
+            left: 100px;
+        }
+        50% {
+            top: 300px;
+            left: 200px;
+        }
+    }
+
+    #circle2 {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background-color: blueviolet;
+        z-index: -2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 30%;
+        animation-name: circle2;
+        animation-duration: 15s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+    }
+    @keyframes circle2 {
+        0% {
+            top: 0;
+            left: 0;
+
+        }
+        25% {
+            top: 50px;
+            left: 50px;
+        }
+        25% {
+            top: 100px;
+            left: 100px;
+        }
+        50% {
+            top: 300px;
+            left: 200px;
+        }
+    }
+
+    /* @media (min-width: 580) {
+        body{
+            width: auto;
+        }
+        #circle {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+
+        }
+    } */
